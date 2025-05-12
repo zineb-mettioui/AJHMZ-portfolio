@@ -1,0 +1,56 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	margin-top: 20px;
+	padding: 20px;
+	border-bottom: 1px solid black;
+}
+
+.logo img {
+	width: 100px;
+	height: auto;
+	margin-left: 50px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	margin-right: 60px;
+}
+
+nav ul li {
+	margin-left: 50px;
+}
+
+nav ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.project-jazzzolder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 60px;
+	gap: 80px;
+}
+
+.project-jazzzolder img {
+	width: 50%;
+	height: auto;
+	display: block;
+}
