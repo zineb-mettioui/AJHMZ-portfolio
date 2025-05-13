@@ -4,12 +4,6 @@ body {
 	padding: 0;
 }
 
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
 header {
 	display: flex;
 	justify-content: space-between;
@@ -45,7 +39,6 @@ nav ul li a:hover {
 	color: #d3d3d3;
 	border-radius: 5px;
 }
-
 main {
 	padding: 20px;
 	text-align: left;
@@ -60,4 +53,18 @@ h1 {
 	margin-left: 70px;
 	margin-bottom: 50px;
 	color: lightgray;
+}
+
+.project-rijschool {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 60px;
+	gap: 80px;
+}
+
+.project-rijschool img {
+	width: 50%;
+	height: auto;
+	display: block;
 }
