@@ -4,6 +4,8 @@ body {
 	padding: 0;
 }
 
+/** NAVIGATION **/
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -39,6 +41,9 @@ nav ul li a:hover {
 	color: #d3d3d3;
 
 }
+
+
+/** ABOUT LAYOUT **/
 
 main {
 	width: 50%;

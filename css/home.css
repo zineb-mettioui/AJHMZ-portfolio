@@ -5,6 +5,8 @@ body {
 	padding: 0;
 }
 
+/** NAVIGATION **/
+
 header {
 	
 	display: flex;
@@ -41,6 +43,8 @@ nav ul li a:hover {
 	color: #d3d3d3;
 
 }
+
+/** HOME LAYOUT **/
 
 main {
 	padding: 20px;
