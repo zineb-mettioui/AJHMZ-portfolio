@@ -73,3 +73,18 @@ h1 {
 	height: auto;
 	display: block;
 }
+
+/** FOOTER **/
+footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	bottom: 20px;
+}
+
+footer p {
+	margin: 0;
+	font-size: 16px;
+	color: black;
+}

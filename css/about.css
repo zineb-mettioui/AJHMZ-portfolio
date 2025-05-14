@@ -1,5 +1,5 @@
 body {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -39,9 +39,7 @@ nav ul li a {
 
 nav ul li a:hover {
 	color: #d3d3d3;
-
 }
-
 
 /** ABOUT LAYOUT **/
 
@@ -57,7 +55,7 @@ h1 {
 	margin-top: 50px;
 	margin-left: 70px;
 	margin-bottom: 50px;
-	color: lightgray;
+	color: #d3d3d3;
 }
 
 p {
@@ -67,5 +65,20 @@ p {
 	margin-top: 50px;
 	margin-left: 70px;
 	margin-bottom: 50px;
-	color: lightgray;
+	color: #d3d3d3;
+}
+
+/** FOOTER **/
+footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	bottom: 20px;
+}
+
+footer p {
+	margin: 0;
+	font-size: 16px;
+	color: black;
 }
