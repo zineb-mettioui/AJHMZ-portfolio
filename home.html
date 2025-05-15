@@ -7,23 +7,44 @@
 		<title>AJHMZ_Portfolio</title>
 	</head>
 	<body>
+		<div id="loading-screen">
+			<div class="loader">Loading...</div>
+		</div>
 		<header>
 			<nav>
 				<ul>
 					<li><a href="projects.html">Projects</a></li>
-					<li><a href="about.html">Over ons</a></li>
+					<li><a href="overons.html">Over ons</a></li>
 					<li><a href="team.html">Team</a></li>
 				</ul>
 			</nav>
-			
 		</header>
-		<main>
-			<div class="home-item">
-				<img src="images/home.png" alt="home-item" />
+		<main id="main-content" style="display: none">
+			<div class="section1">
+				<h1 class="custom-font1">WELKOM BIJ</h1>
+				<h2 class="custom-font2">PORTFOLIO</h2>
+			</div>
+			<div class="section2">
+				<h3 class="custom-font3">AJHMZ</h3>
 			</div>
 		</main>
 		<footer>
 			<p>Copyright © AJHMZ-Team. Made with passion by five ✨.</p>
 		</footer>
 	</body>
+	<script>
+		window.addEventListener("load", function () {
+			const loadingScreen = document.getElementById("loading-screen");
+			const mainContent = document.getElementById("main-content");
+			const header = document.querySelector("header");
+			const footer = document.querySelector("footer");
+
+			setTimeout(() => {
+				loadingScreen.style.display = "none";
+				mainContent.style.display = "block";
+				header.style.display = "flex"; // Show the header
+				footer.style.display = "flex"; // Show the footer
+			}, 3000);
+		});
+	</script>
 </html>
