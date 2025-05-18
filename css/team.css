@@ -157,6 +157,11 @@ h3 {
 	margin-right: 250px;
 	color: #d3d3d3;
 }
+.special-font {
+    font-family: 'DreamAvenue', sans-serif;
+    color: black
+}
+
 
 .container {
 	width: 90%;

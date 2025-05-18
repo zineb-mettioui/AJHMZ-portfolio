@@ -156,7 +156,6 @@ h3 {
 .project-list {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 50px;
 	justify-content: center;
 	gap: 80px;
 	padding-top: 50px;
@@ -166,8 +165,10 @@ h3 {
 }
 
 .project-item {
+
 	flex: 0 0 calc(40% - 20px);
 	box-sizing: border-box;
+	margin-top: 100px;
 }
 
 .project-list img {
