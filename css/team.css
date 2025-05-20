@@ -22,6 +22,18 @@ header {
 	margin-left: 80px;
 }
 
+.menu-toggle {
+	visibility: hidden;
+}
+
+nav ul.active {
+	display: flex;
+}
+
+nav ul li {
+	margin: 10px 0;
+}
+
 nav ul {
 	list-style: none;
 	display: flex;
@@ -43,7 +55,8 @@ nav ul li a:hover {
 }
 
 /** TEAM LAYOUT **/
-/** text Fonts **/
+
+/** Titel Fonts **/
 
 @font-face {
 	font-family: "DreamAvenue";
@@ -84,6 +97,9 @@ h2 {
 	letter-spacing: 10px;
 	margin-top: 0px;
 }
+
+/***** ANIMATION *****/
+
 @keyframes slideInLeft {
 	from {
 		transform: translateX(-100%);
@@ -158,71 +174,47 @@ h3 {
 	color: #d3d3d3;
 }
 .special-font {
-    font-family: 'DreamAvenue', sans-serif;
-    color: black
+	font-family: "DreamAvenue", sans-serif;
+	color: black;
 }
 
-
-.container {
-	width: 90%;
-	margin: 0 auto;
-}
-
-.section {
+.carousel-container {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	margin-bottom: 50px;
-	position: relative;
+	max-width: 100%;
+	margin: 180px;
+	overflow-x: auto;
+	padding: 10px;
 }
-
-.section.reverse {
-	flex-direction: row-reverse;
+.carousel {
+	display: flex;
+	gap: 20px;
 }
-
-.image {
-	flex: 1;
-	position: absolute;
-	padding-top: 400px;
-	padding-bottom: 100px;
+.carousel-item {
+	text-align: center;
 }
-
-.image img {
-	width: 100%;
-	max-width: 300px;
-	height: auto;
+.carousel img {
+	max-width: 200px;
+	cursor: pointer;
+	transition: transform 0.3s;
 }
-
-.text {
-	flex: 1;
+.carousel img:hover {
+	transform: scale(1.1);
+}
+.info,
+.additional-info {
+	display: none;
+	padding: 10px;
+	margin-top: 10px;
 	text-align: center;
 }
 
-.text h3 {
-	text-align: right;
-	color: black;
+.info {
+	font-size: 20px;
 }
-
-.text h4 {
-	text-align: left;
-	color: black;
-}
-
-.line {
-	position: absolute;
-}
-
-.black-line {
-	width: 1px;
-	height: 400Ppx;
-	background-color: black;
-	left: 50%;
-}
-
-.gray-line {
-	width: 400px;
-	height: 1px;
-	background-color: gray;
-	bottom: 20px;
+.additional-info {
+	font-size: 16px;
 }
 
 /** FOOTER **/
@@ -236,3 +228,112 @@ footer {
 	font-size: 16px;
 	color: black;
 }
+
+/****** Media for Mobile *******/
+@media (max-width: 768px) {
+	.logo img {
+		margin-left: 25px;
+		animation: none;
+	}
+	nav {
+		display: none; /* Hide the regular nav on mobile */
+	}
+	.menu-toggle {
+		visibility: visible;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+	}
+
+	.menu-toggle div {
+		width: 30px;
+		height: 2px;
+		background-color: black;
+		margin: 4px 0;
+		margin-right: 25px;
+		transition: all 0.3s ease;
+	}
+
+	.h-nav {
+		height: 100%;
+		width: 200px;
+		position: fixed;
+		margin-left: 180px;
+		top: 0;
+		right: -150px;
+		background-color: #d3d3d3;
+		overflow-x: hidden;
+		transition: 0.3s;
+		padding-top: 60px;
+	}
+
+	.h-nav a {
+		padding: 10px 15px;
+		text-decoration: none;
+		font-size: 18px;
+		color: black;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.h-nav a:hover {
+		color: #d3d3d3;
+	}
+
+	.h-nav.active {
+		left: 0; /* Slide into view from the right */
+	}
+
+	.section1 {
+		display: flex;
+		text-align: left;
+		padding-left: 100px;
+		color: #d3d3d3;
+		margin-top: 20px;
+	}
+
+	.section2 {
+		display: flex;
+		text-align: left;
+		padding-left: 140px;
+		color: black;
+	}
+
+	h1,
+	h2 {
+		text-align: center;
+		font-size: 36px;
+		letter-spacing: 10px;
+		opacity: 1;
+		visibility: visible;
+		animation: none;
+	}
+
+	h3 {
+		font-size: 18px;
+		margin: 10px;
+		padding-bottom: 50px;
+	}
+
+	.carousel img {
+		max-width: 100px;
+	}
+
+	.carousel-container {
+		margin: 10px;
+
+	}
+	.info {
+		font-size: 12px;
+	}
+	.additional-info {
+		font-size: 10px;
+	}
+	footer {
+		font-size: 12px;
+		padding-top: 40px;
+	}
+}
+
+
+/* AJHMZ ZICHTBAAR OP NAV WAAROM ????????*/

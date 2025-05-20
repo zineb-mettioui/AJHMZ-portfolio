@@ -13,8 +13,19 @@
 					<img src="images/AJHMZLogo.png" alt="Logo" />
 				</a>
 			</div>
+			<div class="menu-toggle" onclick="toggleMenu()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
+			<div class="h-nav" id="h-nav">
+				<a href="projects.html">Projects</a>
+				<a href="overons.html">Over ons</a>
+				<a href="team.html" style="color: #fff">Team</a>
+			</div>
 			<nav>
-				<ul>
+				<ul class="nav-menu" id="nav-menu">
 					<li><a href="projects.html">Projects</a></li>
 					<li><a href="overons.html">Over ons</a></li>
 					<li><a href="team.html" style="color: #d3d3d3">Team</a></li>
@@ -31,64 +42,67 @@
 
 			<h3>Ontmoet ons team en ontdek wie de gezichten achter het <span class="special-font">AJHMZ</span>-team zijn!</h3>
 
-			<div class="container">
-				<div class="section">
-					<div class="image">
-						<img src="Images/AJHMZLogo.png" alt="Placeholder Image" />
-						<div class="line gray-line"></div>
+			<div class="carousel-container">
+				<div class="carousel">
+					<div class="carousel-item">
+						<img src="Images/testteam.png" alt="Image 1" onclick="toggleInfo(0)" />
+						<div class="info" id="info0">
+							Amel Ahriga
+							<p class="additional-info">Information about Amel Aghbri</p>
+						</div>
 					</div>
-					<div class="text">
-						<div class="line black-line"></div>
-						<h3>Amel ahriga</h3>
+					<div class="carousel-item">
+						<img src="Images/testteam.png" alt="Image 2" onclick="toggleInfo(1)" />
+						<div class="info" id="info1">
+							Jessy Lahdo
+							<p class="additional-info">Information about Jessy Lahdo</p>
+						</div>
 					</div>
-				</div>
-
-				<div class="section reverse">
-					<div class="text">
-						<div class="line black-line"></div>
-						<h3>Jessy Lahdo</h3>
+					<div class="carousel-item">
+						<img src="Images/testteam.png" alt="Image 3" onclick="toggleInfo(2)" />
+						<div class="info" id="info2">
+							Mathias Öz
+							<p class="additional-info">Information about Mathias Öz</p>
+						</div>
 					</div>
-					<div class="image">
-						<img src="Images/AJHMZLogo.png" alt="Placeholder Image" />
-						<div class="line gray-line"></div>
+					<div class="carousel-item">
+						<img src="Images/testteam.png" alt="Image 4" onclick="toggleInfo(3)" />
+						<div class="info" id="info3">
+							Hamza Tazi
+							<p class="additional-info">Information about Hamza Tazi</p>
+						</div>
 					</div>
-				</div>
-				<div class="section">
-					<div class="image">
-						<img src="Images/AJHMZLogo.png" alt="Placeholder Image" />
-						<div class="line gray-line"></div>
-					</div>
-					<div class="text">
-						<div class="line black-line"></div>
-						<h3>Mathias Öz</h3>
-					</div>
-				</div>
-
-				<div class="section reverse">
-					<div class="text">
-						<div class="line black-line"></div>
-						<h3>Hamza Tazi</h3>
-					</div>
-					<div class="image">
-						<img src="Images/AJHMZLogo.png" alt="Placeholder Image" />
-						<div class="line gray-line"></div>
-					</div>
-				</div>
-
-				<div class="section">
-					<div class="image">
-						<img src="Images/AJHMZLogo.png" alt="Placeholder Image" />
-						<div class="line gray-line"></div>
-					</div>
-					<div class="text">
-						<div class="line black-line"></div>
-						<h3>Zineb Mettioui</h3>
+					<div class="carousel-item">
+						<img src="Images/testteam.png" alt="Image 5" onclick="toggleInfo(4)" />
+						<div class="info" id="info4">
+							Zineb Mettioui
+							<p class="additional-info">Information about Zineb Mettioui</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
+
 		<footer>
 			<p>Copyright © AJHMZ-Team. Made with passion by five ✨.</p>
 		</footer>
 	</body>
+	<script>
+		function toggleMenu() {
+			const nav = document.getElementById("h-nav");
+			nav.classList.toggle("active");
+		}
+
+		function toggleInfo(index) {
+			const infos = document.querySelectorAll(".info");
+			infos.forEach((info) => {
+				info.style.display = "none";
+				info.querySelector(".additional-info").style.display = "none";
+			});
+			// Show the selected info section
+			const selectedInfo = document.getElementById("info" + index);
+			selectedInfo.style.display = "block";
+			selectedInfo.querySelector(".additional-info").style.display = "block";
+		}
+	</script>
 </html>
