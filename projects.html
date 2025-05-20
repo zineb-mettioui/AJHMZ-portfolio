@@ -13,6 +13,17 @@
 					<img src="images/AJHMZLogo.png" alt="Logo" />
 				</a>
 			</div>
+			<div class="menu-toggle" onclick="toggleMenu()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
+			<div class="h-nav" id="h-nav">
+				<a href="projects.html" style="color: #fff">Projects</a>
+				<a href="overons.html">Over ons</a>
+				<a href="team.html" >Team</a>
+			</div>
 			<nav>
 				<ul>
 					<li><a href="projects.html" style="color: #d3d3d3">Projects</a></li>
@@ -49,16 +60,24 @@
 					</a>
 					<p>Oyenbrugmolen-UX-Ontwerp</p>
 				</div>
-				<div class="project-item">
-					<a href="project2.html">
-						<img src="images/jazzzolder-desktop.png" alt="Project 2" />
-					</a>
-					<p>Project 2 Description</p>
-				</div>
 			</div>
 		</main>
 		<footer>
 			<p>Copyright © AJHMZ-Team. Made with passion by five ✨.</p>
 		</footer>
 	</body>
+	<script>
+		function toggleMenu() {
+			const nav = document.getElementById("h-nav");
+			nav.classList.toggle("active");
+		}
+
+		function toggleInfo(index) {
+			const infos = document.querySelectorAll(".info");
+			infos.forEach((info) => {
+				info.style.display = "none";
+				info.querySelector(".additional-info").style.display = "none";
+			});
+		}
+	</script>
 </html>

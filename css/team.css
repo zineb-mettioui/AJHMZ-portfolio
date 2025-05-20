@@ -25,6 +25,9 @@ header {
 .menu-toggle {
 	visibility: hidden;
 }
+.h-nav {
+	visibility: hidden;
+}
 
 nav ul.active {
 	display: flex;
@@ -236,7 +239,7 @@ footer {
 		animation: none;
 	}
 	nav {
-		display: none; /* Hide the regular nav on mobile */
+		display: none; 
 	}
 	.menu-toggle {
 		visibility: visible;
@@ -255,6 +258,7 @@ footer {
 	}
 
 	.h-nav {
+		visibility: visible;
 		height: 100%;
 		width: 200px;
 		position: fixed;
@@ -321,7 +325,6 @@ footer {
 
 	.carousel-container {
 		margin: 10px;
-
 	}
 	.info {
 		font-size: 12px;
@@ -334,6 +337,5 @@ footer {
 		padding-top: 40px;
 	}
 }
-
 
 /* AJHMZ ZICHTBAAR OP NAV WAAROM ????????*/
