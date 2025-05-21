@@ -21,6 +21,12 @@ header {
 	height: auto;
 	margin-left: 80px;
 }
+.menu-toggle {
+	visibility: hidden;
+}
+.h-nav {
+	visibility: hidden;
+}
 
 nav ul {
 	list-style: none;
@@ -150,6 +156,8 @@ h3 {
 	margin-top: 150px;
 	margin-left: 250px;
 	margin-right: 250px;
+	margin-bottom: 80px;
+	padding-bottom: 80px;
 	color: #d3d3d3;
 }
 
@@ -158,8 +166,7 @@ h3 {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 80px;
-	padding-top: 50px;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -167,7 +174,6 @@ h3 {
 .project-item {
 	flex: 0 0 calc(40% - 20px);
 	box-sizing: border-box;
-	margin-top: 100px;
 }
 
 .project-list img {
@@ -176,13 +182,12 @@ h3 {
 	display: block;
 }
 
-.project-item p {
-	color: black;
+.project-list h4 {
+
 	text-align: left;
+	font-weight: 100;
 	background-color: #fff;
-	margin-top: 0;
-	padding-bottom: 20px;
-	padding-left: 50px;
+	margin-top: 20px;
 }
 
 /** FOOTER **/
@@ -284,7 +289,6 @@ footer {
 		margin-bottom: 0;
 		padding: 0;
 		padding-bottom: 20px;
-
 	}
 	.project-list {
 		display: flex;
@@ -295,13 +299,11 @@ footer {
 
 	.project-list img {
 		width: 80%;
-
 	}
 
-	.project-item  {
+	.project-item {
 		margin: 0;
 		padding: 0;
-
 	}
 
 	.project-item p {
@@ -309,7 +311,6 @@ footer {
 		background-color: #fff;
 		padding: 0;
 		margin-top: 10px;
-
 	}
 
 	footer {

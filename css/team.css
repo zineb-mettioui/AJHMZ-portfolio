@@ -183,7 +183,7 @@ h3 {
 
 .carousel-container {
 	display: flex;
-	justify-content: center;
+	justify-content: row;
 	align-items: center;
 	max-width: 100%;
 	margin: 180px;
@@ -232,14 +232,17 @@ footer {
 	color: black;
 }
 
-/****** Media for Mobile *******/
+/****** 
+Media for Mobile
+*******/
+
 @media (max-width: 768px) {
 	.logo img {
 		margin-left: 25px;
 		animation: none;
 	}
 	nav {
-		display: none; 
+		display: none;
 	}
 	.menu-toggle {
 		visibility: visible;
@@ -285,7 +288,7 @@ footer {
 	}
 
 	.h-nav.active {
-		left: 0; /* Slide into view from the right */
+		left: 0;
 	}
 
 	.section1 {
@@ -320,7 +323,10 @@ footer {
 	}
 
 	.carousel img {
-		max-width: 100px;
+		display: flex;
+		flex-direction: column;
+		max-width: 80%;
+		gap: 5px;
 	}
 
 	.carousel-container {
