@@ -1,5 +1,5 @@
 body {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -14,7 +14,6 @@ header {
 	margin-top: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	
 }
 
 .logo img {
@@ -43,9 +42,7 @@ nav ul li a:hover {
 	color: #d3d3d3;
 }
 
-
 /** PROJECT RIJSCHOOL LAYOUT **/
-
 
 /** Animations **/
 
@@ -88,6 +85,22 @@ h2 {
 	letter-spacing: 10px;
 	margin-top: 0px;
 }
+nav {
+	animation: slideInRight 1s ease-out forwards;
+}
+
+h3 {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 50px;
+	font-weight: 80;
+	text-align: center;
+	margin-top: 150px;
+	margin-left: 250px;
+	margin-right: 250px;
+	margin-bottom: 150px;
+	color: #d3d3d3;
+}
+
 @keyframes slideInLeft {
 	from {
 		transform: translateX(-100%);
@@ -129,43 +142,137 @@ h2 {
 	animation: slideInRight 1s ease-out forwards;
 }
 
-.team-image{
-	display: flex;
-	justify-content: center;
-	
+nav {
+	animation: slideInRight 1s ease-out forwards;
 }
 
-.team-image img {
+h3 {
+	opacity: 0;
+	visibility: hidden;
+	animation: popIn 1s ease-out forwards;
+	animation-delay: 1s;
+}
+
+/** PROJECT OYENBRUGMOLEN LAYOUT **/
+
+main {
+	padding: 20px;
+	text-align: left;
+}
+.container {
+	max-width: 1000px;
+	margin-left: 250px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.column {
+	flex: 0 0 45%;
+}
+
+h4 {
+	color: #d3d3d3;
+	font-size: 26px;
+	margin-top: 30px;
+}
+
+main ul li {
+	list-style: none;
+}
+
+h5 {
+	color: black;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+p {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+/* FASES TITELS + TEXT*/
+.fase-intro-bar {
+	background-color: #d3d3d3;
+	color: black;
+	padding: 15px 20px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fase-intro-bar .fase-title {
+	color: black;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+	padding: 0;
+	background-color: transparent;
+	display: block;
+}
+
+.fase-intro-bar p {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	color: black;
+	line-height: 1.6;
+}
+
+/** IMAGES WIDTH **/
+.image {
 	width: 100%;
 	height: auto;
-	display: block;
-	padding-top: 20px;
-	padding-bottom: 50px;
+	margin: 20px 0;
+	margin-top: 0;
 }
-h3 {
-	font-size: 50px;
-	font-weight: 100;
-	width: 50%;
-	margin-top: 50px;
-	margin-left: 70px;
-	margin-bottom: 50px;
-	color: lightgray;
+.images {
+	width: 100%;
+	height: auto;
+	margin: 20px 0;
 }
-
-.project-rijschool {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 60px;
-	gap: 80px;
-}
-
-.project-rijschool img {
+.imageblock {
 	width: 50%;
 	height: auto;
-	display: block;
+	margin: 20px 0;
 }
 
+/** IMAGE ZOOM IN **/
+
+.images:hover {
+	transform: scale(1.05);
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+	background-color: #d3d3d3;
+}
+
+.overlay-image {
+	max-width: 90%;
+	max-height: 90%;
+}
+.iframe-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /** FOOTER **/
 footer {
