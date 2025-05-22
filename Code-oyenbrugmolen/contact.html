@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+
+        <!-- HEADER (volledige breedte, geen container) -->
+
+        <header>
+            <div class="logo">
+              <a href="Home.html">
+                <img src="fotos/logo molen.png" alt="Oyenbrugmolen Logo" />
+              </a>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="index.html">Activiteiten</a></li>
+                <li><a href="restauratie.html">Restauratie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+
+
+        <!-- s1 -->
+
+        <section class="contact-section">
+            <h1 class="title">CONTACTEER ONS</h1>
+            <p class="subtitle">Heb je vragen of opmerkingen? Stuur ons gerust een bericht!</p>
+        
+            <div class="contact-container">
+              <div class="form-container">
+                <h2 class="form-title">Neem contact met ons op</h2>
+                <p class="form-subtitle">We horen graag van je, laat hieronder een bericht achter!</p>
+        
+                <form>
+                  <input type="text" placeholder="Naam *" required>
+                  <input type="email" placeholder="E-mailadres *" required>
+                  <select required>
+                    <option disabled selected>Activiteiten *</option>
+                    <option>Maaldagen</option>
+                    <option>Kleine waterkrachtcentrale</option>
+                    <option>Bakdagen bij t'overbuur</option>
+                    <option>Molendagen</option>
+                    <option>Openmonumentdag</option>
+                    <option>Groepsbezoeken en wandelingen</option>
+                    <option>Andere</option>
+                  </select>
+                  <textarea rows="5" placeholder="Bericht..."></textarea>
+                  <button type="submit">STUREN</button>
+                </form>
+        
+                <div class="contact-info">
+                  <div>
+                    📞 <strong>NUMMER</strong><br>02 251 95 53
+                  </div>
+                  <div>
+                    📧 <strong>EMAIL</strong><br>oyenbrugmolen@skynet.be
+                  </div>
+                  <div>
+                    🏛 <strong>ADRES</strong><br>Oyenbrugstraat 140/142, 1850 Grimbergen
+                  </div>
+                </div>
+              </div>
+        
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps?q=Oyenbrugstraat+140,+1850+Grimbergen&output=embed"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <div class="footer-container">
+
+                <!-- Linkerkolom -->
+
+                <div class="footer-column footer-logo-contact">
+                    <img src="fotos/logo oynebrugmolen.png" alt="Logo Oyenbrugmolen" class="footer-logo" />
+                    <p>Oyenbrugstraat 140/142<br />1850 Grimbergen</p>
+                    <p>
+                        02 251 95 53<br /><a href="mailto:oyenbrugmolen@skynet.be">oyenbrugmolen@skynet.be</a>
+                    </p>
+                </div>
+
+                <!-- Middenkolom -->
+
+                <div class="footer-column footer-links">
+                    <a href="Home.html">Home</a>
+                    <a href="index.html">Activiteiten</a>
+                    <a href="restauratie.html">Restauratie</a>
+                    <a href="contact.html">Contact</a>
+                  </div>
+
+                <!-- Rechterkolom -->
+
+                <div class="footer-column newsletter">
+                    <h4>Nieuwsbrief</h4>
+                    <p>
+                        Abonneer je om op de hoogte te blijven van nieuw
+                        webdesign en de
+
+                        laatste updates elke maand. Laat ons eraan beginnen!
+                    </p>
+                    <form>
+                        <input type="email" placeholder="Vul je e-mailadres in" />
+                        <button type="submit">Abonneren</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Lift Media. Alle rechten voorbehouden.</p>
+            </div>
+        </footer>
+    </body>
+</html>

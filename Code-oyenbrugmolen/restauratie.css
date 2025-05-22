@@ -1,0 +1,281 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+strong {
+  font-weight: lighter;
+  color: #c40f10;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* CONTAINER */
+.container {
+  padding: 20px 40px;
+}
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  position: relative;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 160px;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-weight: lighter;
+}
+
+
+nav a:hover {
+  color: #c40f10;
+}
+
+/* Titels */
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #b30000;
+  font-size: 2.2rem;
+}
+
+h3 {
+  text-align: center;
+  color: #666;
+  margin-top: 0.5rem;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+/* Banner */
+.image-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1rem;
+  padding: 0px 60px;
+}
+
+/* Content */
+
+.content p strong {
+  color: #b30000;
+}
+.section {
+  margin-bottom: 60px;
+}
+.section.vak p,
+ul {
+  padding: 20px 40px;
+}
+.section p {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+.content p {
+  background-color: #f5f5f5;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #b30000;
+  font-size: 40px;
+  margin-top: 2rem;
+  margin-bottom: 40px;
+}
+.content h2 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+h3 {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.section h3 {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+}
+
+.section p {
+  font-size: 1rem;
+  background-color: #f5f5f5;
+  margin: 0px 60px;
+  font-size: 20px;
+}
+
+.section ul {
+  list-style: circle;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #f5f5f5;
+  margin: 0px 60px;
+  font-size: 20px;
+}
+
+/* Flex layout voor tekst + beeld */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  padding: 0px 60px;
+}
+.flex img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+}
+.flex p,
+.flex ul {
+  flex: 1;
+  font-size: 20px;
+  padding: 20px 40px;
+}
+
+ /* FOOTER */
+ footer {
+  background: #f5f5f5;
+  padding: 40px 63px 20px;
+  font-size: 14px;
+  color: #333;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Linkerkolom */
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-logo-contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Middenkolom */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c40f10;
+}
+
+/* Nieuwsbrief */
+.newsletter h4 {
+  color: #c40f10;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background: #c40f10;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Onderkant */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+  }
+}

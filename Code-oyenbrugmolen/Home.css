@@ -1,0 +1,333 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: lighter;
+  color: #c40f10;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* CONTAINER */
+.container {
+  padding: 20px 40px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  position: relative;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 160px;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-weight: lighter;
+}
+
+
+nav a:hover {
+  color: #c40f10;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-weight: lighter;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  color: black;
+  padding-bottom: 60px;
+  font-weight: lighter;
+}
+
+.btn {
+  display: inline-block;
+  background: #c40f10;
+  color: white;
+  padding: 20px 50px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* INTRO */
+.intro {
+  padding: 60px 0;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.intro h2 {
+  color: #c40f10;
+  margin-bottom: 20px;
+  font-size: 40px;
+  padding-left: 460px;
+  padding-right: 460px;
+  font-weight: lighter;
+}
+
+.intro p {
+  font-size: 24px;
+  background-color: #f5f5f5;
+  text-align: left;
+  padding: 20px 40px;
+}
+
+.highlight {
+  color: #c40f10;
+  font-weight: bold;
+}
+
+/* CARDS CAROUSEL */
+.cards-carousel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 40px 0;
+  position: relative;
+}
+
+.cards-track {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 60px;
+  padding-left: 60px;
+}
+
+.cards-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 27%;
+  scroll-snap-align: start;
+  border: 1px solid rgb(104, 104, 104);
+  padding: 30px 30px 70px 30px;
+  background: rgb(243, 243, 243);
+  transition: transform 0.3s ease;
+  margin-right: 60px;
+}
+h2 {
+  color: #c40f10;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+.card h3 {
+  font-size: 36px;
+  font-weight:400;
+
+}
+
+.span-1 {
+line-height: 130%;
+
+}
+
+
+.card p {
+  font-size: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 80%;
+  }
+}
+
+/* ACTIVITEITEN */
+.activiteiten {
+  background: #f5f5f5;
+
+  text-align: left;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.activiteiten h2 {
+  color: #c40f10;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.activiteiten p strong {
+  color: #c40f10;
+  font-weight: lighter;
+}
+.activiteiten p {
+  font-size: 24px;
+}
+
+ /* FOOTER */
+ footer {
+  background: #f5f5f5;
+  padding: 40px 63px 20px;
+  font-size: 14px;
+  color: #333;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Linkerkolom */
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-logo-contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Middenkolom */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c40f10;
+}
+
+/* Nieuwsbrief */
+.newsletter h4 {
+  color: #c40f10;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background: #c40f10;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Onderkant */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+  }
+}

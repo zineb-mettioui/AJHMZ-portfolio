@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* CONTAINER */
+.container {
+  padding-left: 63px;
+  padding-right: 63px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  position: relative;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 160px;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-weight: lighter;
+}
+
+
+nav a:hover {
+  color: #c40f10;
+}
+
+/* MAIN CONTENT */
+
+.intro h2 {
+  color: #c40f10;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.intro {
+  padding: 60px 0;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+.container {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  flex-shrink: 0;
+
+}
+
+.text {
+  flex: 1;
+  background: rgb(243, 243, 243);
+  padding: 20px;
+}
+
+.title {
+  color: #d52b1e;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.red {
+  color: #d52b1e;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #4577aa;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0.5em;
+}
+
+
+ /* FOOTER */
+ footer {
+  background: #f5f5f5;
+  padding: 40px 63px 20px;
+  font-size: 14px;
+  color: #333;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Linkerkolom */
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-logo-contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Middenkolom */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c40f10;
+}
+
+/* Nieuwsbrief */
+.newsletter h4 {
+  color: #c40f10;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  background: #c40f10;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Onderkant */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+  }
+}
