@@ -195,6 +195,25 @@ p {
 	margin-bottom: 20px;
 }
 
+/* ROL /UITDAGING / CLIENT / TIMELIN */
+.bullet-points {
+	max-width: 1000px;
+	text-align: left;
+	padding: 20px;
+}
+
+.bullet-points ul {
+	padding-left: 20px;
+	list-style-type: disc;
+	padding: 0;
+}
+
+.bullet-points li {
+	list-style-type: disc;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
 /* FASES TITELS + TEXT*/
 .fase-intro-bar {
 	background-color: #d3d3d3;
@@ -272,6 +291,31 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 40px;
+}
+/* SCROLL BUTTON */
+#scrollToTopBtn {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	background-color: #d3d3d3;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	font-size: 24px;
+	border: none;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#scrollToTopBtn.show-button {
+	opacity: 1;
+	visibility: visible;
+}
+
+#scrollToTopBtn:hover {
+	background-color: #808080;
 }
 
 /** FOOTER **/
