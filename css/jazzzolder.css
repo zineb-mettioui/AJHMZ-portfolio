@@ -311,11 +311,11 @@ video {
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
-	background-color: #d3d3d3;
-	color: white;
+	color: black;
 	cursor: pointer;
 	padding: 15px;
-	font-size: 24px;
+	font-size: 40px;
+	background-color: white;
 	border: none;
 	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 	opacity: 0;
@@ -328,7 +328,7 @@ video {
 }
 
 #scrollToTopBtn:hover {
-	background-color: #808080;
+	color: #d3d3d3;
 }
 
 /** FOOTER **/
